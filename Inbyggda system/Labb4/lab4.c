@@ -11,10 +11,10 @@
  * called "Guess the number", where the player shall guess a random
  * number between 1-100.
  *
- * Author: Mathias Beckius, uppdated by Ibrahim Akiel och Ömer Kolsuz
+ * Author: Mathias Beckius, uppdated by Ã–mer Kolsuz
  *
  * Date: 2022-12-06
- filen används för att vi ska kunna printa ut hello world 
+ filen anvÃ¤nds fÃ¶r att vi ska kunna printa ut hello world 
  */
 
 // includes all necessary files for this project
@@ -46,12 +46,12 @@ int main(void)
 
 
 /******************************************************************************
-	OVANFÖR FINNS HUVUDPROGRAMMET, DET SKA NI INTE MODIFIERA!
-	NEDANFÖR KAN NI SKRIVA ERA TESTER. GLÖM INTE ATT PROGRAMMET MÅSTE HA EN
-	OÄNDLIG LOOP I SLUTET!
+	OVANFÃ–R FINNS HUVUDPROGRAMMET, DET SKA NI INTE MODIFIERA!
+	NEDANFÃ–R KAN NI SKRIVA ERA TESTER. GLÃ–M INTE ATT PROGRAMMET MÃ…STE HA EN
+	OÃ„NDLIG LOOP I SLUTET!
 	
-	NÄR DET ÄR DAGS ATT TESTA HUVUDPROGRAMMET KOMMENTERAR NI UT (ELLER RADERAR)
-	ER TESTKOD. GLÖM INTE ATT AVKOMMENTERA HUVUDPROGRAMMET
+	NÃ„R DET Ã„R DAGS ATT TESTA HUVUDPROGRAMMET KOMMENTERAR NI UT (ELLER RADERAR)
+	ER TESTKOD. GLÃ–M INTE ATT AVKOMMENTERA HUVUDPROGRAMMET
 ******************************************************************************/
      hmi_init();
 	 lcd_write_str("Hello world");
