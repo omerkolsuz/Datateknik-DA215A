@@ -2,7 +2,7 @@
  * dicestrings.inc
  *
  *  Created: 2022-11-29 17:21:22
- *   Author: Ibrahim Akiel och Ömer Kolsuz
+ *   Author: Ã–mer Kolsuz
  */ 
 
  
