@@ -2,7 +2,7 @@
 ; lab3.asm
 ;
 ; Created: 2022-11-24 10:23:28
-; Author : Ibrahim Akiel Ömer Kolsuz
+; Author : Ã–mer Kolsuz
 ;
 
 
