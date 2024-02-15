@@ -4,7 +4,7 @@
  * These delay functions are external assembly subroutines.
  * See 'delay_asm.s' for details.
  *
- * Author:	Mathias Beckius , Updated by Ibrahim Akiel och Ömer Kolsuz
+ * Author:	Mathias Beckius , Updated by Ã–mer Kolsuz
  *
  * Date:	2022-12-13
  */
