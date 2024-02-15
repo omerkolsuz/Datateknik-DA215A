@@ -2,7 +2,7 @@
  * monitor.inc
  *
  *  Created: 2022-11-29
- *   Author: Ibrahim Akiel och Ömer Kolsuz
+ *   Author: Ã–mer Kolsuz
  */ 
   monitorstr: .DB "Monitor",0
 // moni_start_str: .DB ">0000: ",0
