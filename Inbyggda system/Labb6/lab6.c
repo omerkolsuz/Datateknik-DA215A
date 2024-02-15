@@ -2,7 +2,7 @@
  * main.c
  *
  * Created: 12/14/2022 9:19:07 AM
- *  Author: Ibrahim Akiel och Ömer Kolsuz
+ *  Author: Ã–mer Kolsuz
  */ 
 
 #include <xc.h>
