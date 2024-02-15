@@ -5,7 +5,7 @@
  *	- let the user enter numbers with the numeric keyboard
  *	- show messages on the LCD
  *
- * Author: Mathias Beckius ,Ibrahim Akiel och Ömer Kolsuz
+ * Author: Mathias Beckius updated by Ömer Kolsuz
  *
  * Date:	2022-12-13
  */ 
