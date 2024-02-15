@@ -2,7 +2,7 @@
  * stat_data.inc
  *
  *  Created: 2022-11-29 15:18:12
- *   Author: Ibrahim och Ömer Kolsuz
+ *   Author: Ã–mer Kolsuz
  */ 
  .DSEG  ; The following applies to the RAM: 
 .ORG  0x100	
@@ -27,13 +27,13 @@ store_stat:
 
     RET
 
-get_stat: ;<skriv kod för rutinen>
+get_stat: ;<skriv kod fÃ¶r rutinen>
 	LDI XH, HIGH(Str)
 	LDI XL, LOW(Str)
 	ADD XL, R24
 	LD R24, X
 	RET
-clear_stat: ;<skriv kod för rutinen> 
+clear_stat: ;<skriv kod fÃ¶r rutinen> 
 	LDI R25, 0
 	STS Str, R25
 	STS Str+1, R25
