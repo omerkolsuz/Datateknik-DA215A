@@ -1,13 +1,13 @@
 /*
  * delay.inc
  *
- * Author:	Ibrahim  Akiel, Ömer Kolsuz
+ * Author:	Ã–mer Kolsuz
  *
  * Date:	2022-11-23
  
  */
 ;==============================================================================
-; Delay of 1 µs (including RCALL)
+; Delay of 1 Âµs (including RCALL)
 ;==============================================================================
 delay_1_micros:   // UPPGIFT: komplettera med ett antal NOP-instruktioner!!! 
 	NOP				;vi delayer med 1mikrosekund
@@ -26,11 +26,11 @@ delay_1_micros:   // UPPGIFT: komplettera med ett antal NOP-instruktioner!!!
 	
 
 ;==============================================================================
-; Delay of X µs
+; Delay of X Âµs
 ;	LDI + RCALL = 4 cycles
 ;==============================================================================
 delay_micros:   // UPPGIFT: komplettera med ett antal NOP-instruktioner!!! 
-	; 12 noppar fungerar bra vid längre tillfällen, den första och sista intstructs kör bara 1 gång, så man kan exkludera de från ekvationen om man vill
+	; 12 noppar fungerar bra vid lÃ¤ngre tillfÃ¤llen, den fÃ¶rsta och sista intstructs kÃ¶r bara 1 gÃ¥ng, sÃ¥ man kan exkludera de frÃ¥n ekvationen om man vill
 	NOP
 	NOP
 	NOP
@@ -62,7 +62,7 @@ loop_dms:
 	RCALL delay_micros
 	DEC R18
 	/*
-	NOP                    ; noppar igenom delayen för att skapa pausen
+	NOP                    ; noppar igenom delayen fÃ¶r att skapa pausen
     NOP
     NOP
     NOP
