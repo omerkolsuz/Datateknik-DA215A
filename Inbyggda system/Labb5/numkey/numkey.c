@@ -3,7 +3,7 @@
  *
  * This is the device driver for the numeric keyboard.
  *
- * Author:	Mathias Beckius , Updated by Ibrahim akiel och Ömer kolsuz
+ * Author:	Mathias Beckius , Updated by Ömer kolsuz
  *
  * Date:	2022-12-13
  */ 
