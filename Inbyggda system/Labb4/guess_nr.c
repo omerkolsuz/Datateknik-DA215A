@@ -3,7 +3,7 @@
  *
  * This is a simple game called "Guess the number".
  *
- * Author:	Mathias Beckius, uppdated by Ibrahim Akiel and Ömer Kolsuz
+ * Author:	Mathias Beckius, Ömer Kolsuz
  *
  * Date:	2022-12-13
  */ 
