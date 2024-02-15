@@ -1,10 +1,10 @@
 /*
  * delay_asm.s
  *
- * Author:	Ibrahim akiel och ömer kolsuz
+ * Author:	Ã–mer kolsuz
  *
  * Date:	2022-12-06
- denna filen används för att fördröja subrutinerna.
+ denna filen anvÃ¤nds fÃ¶r att fÃ¶rdrÃ¶ja subrutinerna.
  */ 
 
  
@@ -38,11 +38,11 @@
 
 	*/
 ;=============================================================================
-; Delay of 1 µs (including RCALL)
+; Delay of 1 Âµs (including RCALL)
 ;==============================================================================
 .global delay_1_micros
 delay_1_micros:   /* UPPGIFT: komplettera med ett antal NOP-instruktioner!!! */
-	; 6 NOP:s reqired for 16MHz 1µs highs and lows.
+	; 6 NOP:s reqired for 16MHz 1Âµs highs and lows.
 	NOP
 	NOP
 	NOP
@@ -52,16 +52,16 @@ delay_1_micros:   /* UPPGIFT: komplettera med ett antal NOP-instruktioner!!! */
 	RET
 
 ;==============================================================================
-; Delay of X µs
+; Delay of X Âµs
 ;	LDI + RCALL = 4 cycles
 ;==============================================================================
 .global delay_micros
 delay_micros:   /* UPPGIFT: komplettera med ett antal NOP-instruktioner!!! */
-	; 12 NOP:s works good for longer times (>3µs)
+	; 12 NOP:s works good for longer times (>3Âµs)
         ; The first and last instructs only run 1 time, so you can exlude them from the equation.
         ; DEC + CPI + BRNE(false) + nNOP = 2 + 1 + 1 + n = 16.
         ; n = 12  => we need 12 NOP:s for longer times.
-    ; 3 NOP:s work good for shorter times (1-3µs)
+    ; 3 NOP:s work good for shorter times (1-3Âµs)
     ; See generated time graph for microseconds in exel
 	NOP
 	NOP
