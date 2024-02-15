@@ -2,7 +2,7 @@
  * Tarning.inc
  *
  *  Created: 2022-11-29 13:52:44
- *   Author: Ibrahim Akiel och Ömer Kolsuz
+ *   Author: Ã–mer Kolsuz
  */ 
 
 
