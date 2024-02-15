@@ -2,7 +2,7 @@
  * lab2.asm
  * 
  * This is a very simple demo program made for the course DA215A at
- * Malmö University. The purpose of this program is:
+ * MalmÃ¶ University. The purpose of this program is:
  *	-	To test if a program can be transferred to the ATmega32U4
  *		microcontroller.
  *	-	To provide a base for further programming in "Laboration 1".
@@ -11,7 +11,7 @@
  * running, the embedded LED on the Arduino board should be turned on.
  * The LED is connected to the D13 pin (PORTC, bit 7).
  *
- * Author:	Ibrahim Akiel, Ömer Kolsuz
+ * Author:	Ã–mer Kolsuz
  *
  * Date:	2022-11-23
  *
@@ -34,7 +34,7 @@
 ;  Skickar instruktionerr till LCD med en 39 mikrosekunds delay after kommandot har exekverats
 ;=========
 	.MACRO LCD_INSTRUCTION ; Skapar en macro till LCD
-	LDI R24, @0				; SKpar en parameter för r24
+	LDI R24, @0				; SKpar en parameter fÃ¶r r24
 	RCALL lcd_write_instr
 	LDI R24, 39
 	RCALL delay_micros
@@ -42,11 +42,11 @@
 ;==============================================================================
 ; Start of program
 ;==============================================================================
-	.CSEG   ;Böjran av bkoden
-	.ORG RESET ; Räknaren påbörjas genom att återställass till 0 i reset
-	RJMP init ; hopppar till init (alltså subrutinen)
+	.CSEG   ;BÃ¶jran av bkoden
+	.ORG RESET ; RÃ¤knaren pÃ¥bÃ¶rjas genom att Ã¥terstÃ¤llass till 0 i reset
+	RJMP init ; hopppar till init (alltsÃ¥ subrutinen)
 
-	.ORG PM_START  // Detta är räknare för värdet PM_START
+	.ORG PM_START  // Detta Ã¤r rÃ¤knare fÃ¶r vÃ¤rdet PM_START
 	.INCLUDE "delay.inc" // Inkluderar delay.inc
 	.INCLUDE "lcd.inc"	// Inkluderar lcd.inc
 ;==============================================================================
@@ -60,7 +60,7 @@ init:
 	OUT SPH, R16
 	; Initialize pins
 	CALL init_pins
-	CALL lcd_init   ;kallar på lcd alltså initierar den
+	CALL lcd_init   ;kallar pÃ¥ lcd alltsÃ¥ initierar den
 	; Jump to main part of program
 	RJMP main
 
@@ -87,19 +87,19 @@ main:
 	LCD_WRITE_CHAR 'E'
 	LCD_WRITE_CHAR 'Y'
 	LCD_WRITE_CHAR ':'
-	LCD_INSTRUCTION 0xC0 ; Ser till att cursorn tillsätts till första line 1 och rad 0
+	LCD_INSTRUCTION 0xC0 ; Ser till att cursorn tillsÃ¤tts till fÃ¶rsta line 1 och rad 0
 key_release:
-	LDI LVAL, NO_KEY		; Sista värdet blir NO_KEY
+	LDI LVAL, NO_KEY		; Sista vÃ¤rdet blir NO_KEY
 loop:
 	RCALL read_keyboard
 	CPI RVAL, NO_KEY
-	BREQ key_release	; branchar till key_released IF return värdet var NO_KEYY
+	BREQ key_release	; branchar till key_released IF return vÃ¤rdet var NO_KEYY
 	CP RVAL, LVAL
-	BREQ loop		; Ifall RVAL och LVAL är lika med brancha till loop
-	MOV LVAL, RVAL	; Kopierar vårt return värde till den sista värdet
-	CPI RVAL, 10	; Jämmför RVAL till 10
-	BRLO write		; IF RVAL är lägre än 10 hoppar över till writee
-	LDI TEMP, 7		; 7 Blir addad till nummer 7 eftersom att mellan 9 och A i ASCII är 7
+	BREQ loop		; Ifall RVAL och LVAL Ã¤r lika med brancha till loop
+	MOV LVAL, RVAL	; Kopierar vÃ¥rt return vÃ¤rde till den sista vÃ¤rdet
+	CPI RVAL, 10	; JÃ¤mmfÃ¶r RVAL till 10
+	BRLO write		; IF RVAL Ã¤r lÃ¤gre Ã¤n 10 hoppar Ã¶ver till writee
+	LDI TEMP, 7		; 7 Blir addad till nummer 7 eftersom att mellan 9 och A i ASCII Ã¤r 7
 	ADD RVAL, TEMP
 write:
 	LDI TEMP, CONVERT
@@ -121,7 +121,7 @@ scan_key:
 	OUT PORTB, R19
 	PUSH R18
 	LDI R24, 20
-	RCALL delay_ms ; delay för bounce
+	RCALL delay_ms ; delay fÃ¶r bounce
 	POP R18
 
 	SBIC PINE, 6
@@ -131,5 +131,5 @@ scan_key:
 	BRNE scan_key
 	LDI R18, NO_KEY        ; Ingen key blev tryckt
 return_key_val:
-	MOV RVAL, R18		;  Kopierar från R18 till RVAL
+	MOV RVAL, R18		;  Kopierar frÃ¥n R18 till RVAL
 	RET
