@@ -10,7 +10,7 @@
  *	1. run random_seed() - no more than once!
  *	2. run random_get_nr() each time you want a new random number
  *
- * Author:	Mathias Beckius, Updated by Ibrahim Akiel och Ömer Kolsuz
+ * Author:	Mathias Beckius, Updated by Ömer Kolsuz
  *
  * Date:	2022-12-13
  */ 
