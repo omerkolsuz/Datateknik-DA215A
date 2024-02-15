@@ -2,7 +2,7 @@
  * stats.inc
  *
  *  Created: 2022-11-29
- *   Author: Ibrahim Akiel och Ömer Kolsuz 
+ *   Author: Ã–mer Kolsuz 
  */ 
 
  
