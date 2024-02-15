@@ -3,7 +3,7 @@
  * motor.h
  *
  * Created: 2022-12-14 09:50:49
- *  Author: Ibrahim Akiel och Ömer Kolsuz
+ *  Author: Ã–mer Kolsuz
  */ 
 
 // #define  allows the programmer to give a name to a constant value before the program is compiled. 
