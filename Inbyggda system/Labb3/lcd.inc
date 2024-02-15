@@ -5,7 +5,7 @@
  * These subroutines are created for the course Datateknik DA215A at
  * Malmo University.
  *
- * Author:	Ibrahim Akiel Ömer Kolsuz
+ * Author:	Ã–mer Kolsuz
  *
  * Date:	2022-11-29
  */
@@ -63,14 +63,14 @@
 lcd_write_nibble:
 	OUT	D_PORT, R24			; write data
 	SBI	E_PORT, E			; set Enable pin for...
-	RCALL delay_1_micros	; ...1 µs!
+	RCALL delay_1_micros	; ...1 Âµs!
 	CBI	E_PORT, E			; clear Enable pin
 	RET
 
 ;==============================================================================
 ; Write to the Instruction Register.
 ; Instruction is stored in R24.
-; A minimum of 39 µs delay must be generated after each instruction!
+; A minimum of 39 Âµs delay must be generated after each instruction!
 ;==============================================================================
 lcd_write_instr:
 	CBI	RS_PORT, RS			; select Instruction Register
@@ -84,7 +84,7 @@ lcd_write_instr:
 ;==============================================================================
 ; Write a character to the Data Register.
 ; Character is stored in R24.
-; After the character has been written, a delay of 43 µs is generated! 
+; After the character has been written, a delay of 43 Âµs is generated! 
 ;==============================================================================
 lcd_write_chr:
 	SBI RS_PORT, RS			; select Data Register
@@ -118,7 +118,7 @@ lcd_init:
 	LDI	R24, 0x20			; Function Set: switch to 4 bit data interface
 	RCALL lcd_write_nibble
 	LDI R24, 45				; must be followed by a minimum
-	RCALL delay_micros		; delay of 39 µs
+	RCALL delay_micros		; delay of 39 Âµs
 
 	LDI	R24, 0x28			; Function Set: 4 bit data interface, 2 lines,
 	RCALL lcd_write_instr	;				Font 5x10
