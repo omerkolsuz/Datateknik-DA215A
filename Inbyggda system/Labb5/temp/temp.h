@@ -3,7 +3,7 @@
  *
  * This is the device driver for the LM35 temperature sensor.
  *
- * Author:	Mathias Beckius,Ibrahim Akiel och Ömer Kolsuz
+ * Author:	Mathias Beckius och Ömer Kolsuz
  *
  * Date:	2022-12-13
  */ 
