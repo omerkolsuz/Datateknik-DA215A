@@ -1,7 +1,7 @@
 ﻿/*
  * common.h
  *
- * Author:	Ibrahim Akiel och Ömer Kolsuz
+ * Author:	Ömer Kolsuz
  *
  * Date:	2022-12-06
 
