@@ -3,7 +3,7 @@
  * motor.c
  *
  * Created: 2022-12-14 09:51:09
- *  Author: Ibrahim Akiel och Ömer Kolsuz
+ *  Author: Ã–mer Kolsuz
  */ 
 
 #include <avr/io.h>
