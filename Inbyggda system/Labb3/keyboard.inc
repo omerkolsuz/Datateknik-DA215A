@@ -2,7 +2,7 @@
  * keyboard.inc
  *
  *  Created: 2022-11-24 10:26:08
- *   Author: Ibrahim Akiel Ömer Kolsuz
+ *   Author: Ã–mer Kolsuz
  */
 
 ;==============================================================================
