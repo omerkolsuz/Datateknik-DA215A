@@ -2,7 +2,7 @@
  * main.c
  *
  * Created: 12/13/2022 8:44:33 AM
- *  Author: Mathias Beckius, Updated by Ibrahim Akiel och Ömer Kolsuz
+ *  Author: Mathias Beckius, Updated by Ã–mer Kolsuz
  */ 
 
 // include all files necessary for the project
@@ -33,7 +33,7 @@ int main(void)
 	numkey_init();
 	temp_init();
 	char key;
-	char temp_str[17]; //lägnden av arrayen storleken är 17 max antal lcd är 16 + 0 
+	char temp_str[17]; //lÃ¤gnden av arrayen storleken Ã¤r 17 max antal lcd Ã¤r 16 + 0 
 	char str_1[] = "TEMPERATURE:";
 	
 	
@@ -47,7 +47,7 @@ int main(void)
 		on the console, the sprintf() function stores any output on char buffer that is
 		specified in sprintf
 		*/
-		// switch case används för att genera texten som står i sprintf för varje tillstånd
+		// switch case anvÃ¤nds fÃ¶r att genera texten som stÃ¥r i sprintf fÃ¶r varje tillstÃ¥nd
         switch(currentState) {
 			case SHOW_TEMP_C:
 				sprintf(temp_str, "%u%cC",temp_read_celsius(),0xDF);
